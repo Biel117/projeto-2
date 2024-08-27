@@ -1,0 +1,87 @@
+#p{
+    text-align: center;
+    font-style: oblique;
+    position:relative;
+  }
+
+  /*a estilização do corpo e o fundo da pagina, em conjunto o paragrafo*/
+body{
+     background:linear-gradient(to right, black,rgb(228, 228, 231),rgb(7, 5, 5));
+     font-size: 30px;
+}
+
+/* aqui é a estilização dos links*/
+a{
+    color:black;
+    text-decoration: none;
+    position: relative;
+    font-size: 25;
+    padding: 0px 50px 10px 0px;
+    left: 70px;
+    top:-30px;
+    
+  }
+  
+  /* aqui eu tentei modificar um pouco o link para fazeruma transição mais suave e deixar um pouco menos "seco" a pagina*/
+a::after{
+    content:" ";
+    width:0%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition: 0.5s ease-in-out;
+}
+a:hover::after{
+    width: 100%;
+}
+
+*{ 
+    text-align:center;
+    margin:15px;
+    padding: 5px;
+    box-sizing:border-box;
+}
+
+/* logo abaixo tem a estilização das imagens e link para ficarem alinhados*/
+img{
+    position: relative;
+    width: 50px;
+    top:35px;
+    left: -18px;
+}
+.img2{
+    position:relative;
+    left: 70px;
+    top: -70px;
+}
+   
+p{
+    position: relative;
+    left:28px;
+}
+.link{
+    position: relative;
+    left:-40px;
+    top:2px
+    
+}
+
+input{
+    position: relative;
+    left: 750px;
+    top: 65px;
+    display: flex;
+
+}
+button{
+    position: relative;
+    top: 75px;
+    left: 40px;
+}
+
+h1{
+    position: relative;
+    left: 20px;
+}
